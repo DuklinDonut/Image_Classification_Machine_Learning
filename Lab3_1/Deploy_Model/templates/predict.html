@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Classification using FLASK </title>
+</head>
+<body>
+
+  <h1 style="margin: auto;width: 80%; text-align: center; margin-top: 50px;  text-transform: uppercase"><b>Image Classification using FLASK</b></h1>
+  <div style="width: 90%; margin: auto; text-align: center">
+    <img src="{{ url_for('send_file', filename=image_file_name)}}" style ="max-width: 500px; max-height: 450px; margin-top: 30px; margin-bottom: 10px">
+    <p style="font-style: italic">{{ image_file_name }}</p>
+    <h3><b>this is a <span style="color: blueviolet;">{{ val }}</span></b></h3>
+     <a href="/" class="icon-block">
+    <i class="icon-home icon-4x"></i>
+    <span>Back to Home</span>
+</a>
+</div>
+</body>
+
+</html>
